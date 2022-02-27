@@ -9,6 +9,7 @@ CREATE TABLE [dbo].[StudentHomeworks](
 	[Id] [int] NULL,
 	[StudentsId] [int] NULL,
 	[HomeworksId] [int] NULL
+	[Content]  [nchar](20) NULL,
 ) ON [PRIMARY]
 GO
 /****** Object:  Table [dbo].[Homeworks]    Script Date: 27.02.2022 09:58:34 ******/
@@ -20,7 +21,9 @@ CREATE TABLE [dbo].[Homeworks](
 	[Id] [int] NOT NULL,
 	[Name] [nchar](20) NULL,
 	[SubjectsId] [nchar](10) NULL,
-	[Content]  [nchar](20) NULL,
+        [Description]  [nchar](20) NULL,
+	
+	
  CONSTRAINT [PK_Homeworks] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
