@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[StudentHomeworks](
-	[İd] [int] NULL,
+	[Id] [int] NULL,
 	[StudentsId] [int] NULL,
 	[HomeworksId] [int] NULL
 ) ON [PRIMARY]
@@ -20,7 +20,7 @@ CREATE TABLE [dbo].[Homeworks](
 	[Id] [int] NOT NULL,
 	[Name] [nchar](20) NULL,
 	[SubjectsId] [nchar](10) NULL,
-	[Content] [int] NULL,
+	[Content]  [nchar](20) NULL,
  CONSTRAINT [PK_Homeworks] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
